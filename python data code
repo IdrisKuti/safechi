@@ -1,0 +1,12 @@
+import pandas as pd
+import seaborn as sns
+import matplotlib.pyplot as plt
+import numpy as np
+df = pd.read_csv('Chicago_Crimes_2015_to_2016.csv')
+data = df.set_index('Primary Type')
+dfs = data.drop(['PUBLIC PEACE VIOLATION','OTHER OFFENSE','GAMBLING','DECEPTIVE PRACTICE','STALKING','OBSCENITY','INTERFENCE WITH PUBLIC OFFICER']\
+          , axis=0)
+dats = dfs.set_index('ID')
+view = sns.FacetGrid(dats.head(500),col='Arrest', hue='Crime Type',size=6)
+view = (view.map(plt.scatter,'Latitude','Longitude').add_legend())
+plt.show()
