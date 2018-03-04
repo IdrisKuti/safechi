@@ -1,0 +1,67 @@
+@import "source/styles/variables";
+.wrapper-home {
+  height: 100vh;
+  position: relative;
+  overflow:hidden;
+}
+
+.Home {
+	margin-left: auto;
+	margin-right: auto;
+	width: 100vh;
+	overflow: hidden;
+}
+#Analyze-container{
+    height: 100vh;
+    overflow: auto;
+    background: #ffffff !important;
+
+}
+#theme-blue{
+	background-color: #30BDDB;
+	color: white;
+}
+
+#title{
+	font-size: 30px;
+	color: $dark-gray;
+}
+#logo_analyze{
+	// font: bold 60px 'Quicksand', sans-serif;
+	color: #30BDDB !important;
+	font-size: 30px;
+	font-weight: bold;
+}
+.bill_blue{
+    // background-image: url($home-image) !important;
+    background-image: url($background-image) !important;
+    background-size: cover !important;
+    background-color: #30BDDB !important;
+    min-height: 100vh;
+}
+
+.fileInput {
+	width: 75%;
+}
+
+
+.imgPreview {
+  text-align: center;
+  margin: 5px 15px;
+  height: auto;
+  width: 500px;
+  img{
+    width: 100%;
+    height: 100%;
+	}
+}
+
+#Image-container {
+	display: block;
+	margin-top: 50px;
+}
+
+.hoverplaceholder {
+color:#fff;
+font-size: 20px;
+}

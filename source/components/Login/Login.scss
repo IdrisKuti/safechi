@@ -1,0 +1,29 @@
+@import "source/styles/variables";
+
+.wrapper-login{
+  	height: 100vh;
+	position: relative;
+}
+.Login {
+    color: $dark-gray;
+    margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.Login__content{
+    padding: 20px !important;
+}
+
+.landing-image-login{
+    background-image: url($background-image) !important;
+    // background-color: #30BDDB !important;
+
+    background-size: cover !important;
+    min-height: 100vh;
+    height: 100vh;
+    position: relative;
+}
